@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 6px;
+    scrollbar-color: #14578f #09121d;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #09121d;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #14578f;
+    border-radius: 4px;
+    border: 3px none #14578f;
+  }
+
+:root {
+    --color-bg: #0A1423;
+    --color-text-main: #fff;
+  }
+
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---- HERO SECTION ---- */
+
+.hero{
+    margin-top: 164px;
+    width: 100vw;
+    height: 510px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.glow{
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    background-image: radial-gradient(/* top */ 100px 100px at 0px 50%, rgba(6, 157, 226, 0.10) 0px, transparent 200px);
+    background-repeat: no-repeat;
+    /* background-position: top 200px left -200px; */
+}
+
+.hero__butterfliesBG{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.06;
+}
+
+.hero__container{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    /* border: 2px green dotted; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero__text{
+    width: 50%;
+    height: 100%;
+    /* border: 1px red solid; */
+}
+
+
+.hero__textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__textContainer{
+    height: 100%;
+    background-image: url("../images/number-15.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+h1{
+    font-family: 'Damion', cursive;
+    font-size: 124px;
+}
+h2{
+    margin-top: -32px;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    letter-spacing: 4px;
+}
+
+
+.hero__butterflies{
+    width: 50%;
+    text-align: center;
+}
+
+.hero__butterflies img{
+    filter: drop-shadow(0px 0px 148px rgba(7, 153, 219, 0.4));
+}
+
+
+
+
+
+
+
+
+/* ---- GALLERY SECTION ---- */
+
+.section-gallery{
+    margin-top: 250px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.gallery{
+    width: 840px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery img{
+    width: 404px;
+    height: 500px;
+    border-radius: 16px;
+    
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 80%);
+    mask-image: linear-gradient(to top, transparent 0%, black 80%);
+    
+}
+
+.gallery-1{
+    filter: drop-shadow(8px 10px 148px rgba(7, 153, 219, 0.3));
+}
+
+
+
+
+
+
+
+
+
+/* ---- LOCATIONS SECTION ---- */
+
+.section-location{
+    position: relative;
+    width: 100vw;
+    box-sizing: content-box;
+}
+
+.butterflies-position{
+    width: 1323px;
+    height: 1326px;
+    position: absolute;
+    right: -260px;
+    top: -240px;
+    z-index: -1;
+    opacity: 0.05;
+    
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.church{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.church__info{
+    display: flex;
+    gap: 56px;
+    margin-top: 32px;
+}
+
+.church__title{
+    font-family: 'Damion', cursive;
+    font-size: 64px;
+    line-height: 70px;
+}
+.church__description{
+    font-family: 'Damion', cursive;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #229afc;
+    margin-top: -20px;
+}
+
+.church__info a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1E80D1;
+    margin-top: -20px;
+}
+
+.butterfly-left{
+    position: absolute;
+    top: -220px;
+    left: 0;
+    filter: drop-shadow(0px 0px 148px rgba(7, 153, 219, 0.4));
+    animation: myAnim 3s ease-in-out 0s infinite normal forwards;
+}
+
+.section-location{
+    margin-top: 164px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 180px;
+}
+
+h3{
+    font-family: 'Damion', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Damion', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+iframe{
+    border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---- FOOTER SECTION ---- */
+
+footer{
+    position: relative;
+    width: 100vw;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.butterfly-right{
+    width: 164px;
+    position: absolute;
+    top: -50px;
+    right: 40px;
+    z-index: 4;
+    /* filter: drop-shadow(0px 0px 148px rgba(7, 153, 219, 0.4)); */
+    animation: myAnim 3s ease-in-out 0s infinite normal forwards;
+}
+
+footer img{
+    width: 360px;
+    height: 360px;
+    margin-bottom: -125px;
+}
+
+.box{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050C19;
+    border-top: 2px #2C425C solid;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #374c70;
+}
