@@ -339,3 +339,106 @@ footer img{
     font-size: 16px;
     color: #374c70;
 }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* body{background: red;} */
+
+
+    /* ---- HERO SECTION ---- */
+
+.hero{
+    margin-top: 164px;
+    width: 100vw;
+    height: 510px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.glow{
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    background-image: radial-gradient(/* top */ 100px 100px at 0px 50%, rgba(6, 157, 226, 0.10) 0px, transparent 200px);
+    background-repeat: no-repeat;
+    /* background-position: top 200px left -200px; */
+}
+
+.hero__butterfliesBG{
+    width: 600px;
+}
+
+.hero__container{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    /* border: 2px green dotted; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.hero__text{
+    width: 100%;
+    height: 100%;
+    order: 1;
+}
+
+
+.hero__textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__textContainer{
+    height: 100%;
+    background-image: url("../images/number-15.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+h1{
+    font-family: 'Damion', cursive;
+    font-size: clamp(56px, 16vw, 80px);
+}
+h2{
+    margin-top: -2px;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+
+.hero__butterflies{
+    width: 100%;
+    text-align: right;
+    order: 2;
+    margin-top: -96px;
+
+}
+
+.hero__butterflies img{
+    max-width: 16vw;
+    filter: drop-shadow(0px 0px 148px rgba(7, 153, 219, 0.4));
+}
+
+
+
+
+
+
+
+  }
