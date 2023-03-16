@@ -305,6 +305,7 @@ iframe{
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
 }
 
 .contact__social{
@@ -447,6 +448,17 @@ footer img{
         letter-spacing: 4px;
     }
 
+    .butterfly-left{
+        width: 140px;
+        height: auto;
+
+        position: absolute;
+        top: -220px;
+        left: 0;
+        filter: drop-shadow(0px 0px 148px rgba(7, 153, 219, 0.4));
+        animation: myAnim 3s ease-in-out 0s infinite normal forwards;
+    }
+
 
 
  }
@@ -561,6 +573,22 @@ h2{
 
 
 
+
+
+
+.date{
+    font-family: 'Damion', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.contact__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
 
 
 
