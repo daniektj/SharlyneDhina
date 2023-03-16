@@ -486,6 +486,10 @@ footer img{
 
     /* ---- HERO SECTION ---- */
 
+    iframe{
+        width: 100%;
+    }
+
 .hero{
     margin-top: 64px;
     width: 100vw;
