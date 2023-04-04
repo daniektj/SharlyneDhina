@@ -4,20 +4,16 @@
     box-sizing: border-box;
 }
 
-
-
-#content-text{
-	color: #aeadb6;
-	font-size: 3.5vw;
-	letter-spacing: .05em;
-	line-height: 1.6;
-	margin-top: 25vh;
-  transform: translateX(50vw) translateX(-50%) translateZ(0px);
-  width: 627px;
-	text-align: center;
-	font-weight: 300;
+.padres{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1E80D1;
 }
-
+.amigos{
+    font-size: 28px;
+    font-weight: 700;
+    
+}
 
 
 
@@ -158,9 +154,8 @@ h2{
     /* border: 1px green dotted; */
     /* margin-top: -32px; */
     /* font-family: 'Damion', cursive; */
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
-    letter-spacing: 4px;
     text-align: center;
 }
 
@@ -514,9 +509,8 @@ footer img{
         /* border: 1px green dotted; */
         /* margin-top: -32px; */
         /* font-family: 'Damion', cursive; */
-        font-family: sans-serif;
+        font-family: "Times New Roman", Times, serif;
         font-size: 16px;
-        letter-spacing: 4px;
         text-align: center;
     }
 
@@ -719,9 +713,9 @@ h2{
     /* border: 1px green dotted; */
     /* margin-top: -32px; */
     /* font-family: 'Damion', cursive; */
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
-    letter-spacing: 4px;
+    
     text-align: center;
 }
 
