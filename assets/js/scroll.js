@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
   };
   
   // Ejecutamos el desplazamiento suave al final del debounce
-  var debounceCustomSmoothScroll = debounce(runCustomSmoothScroll, 50);
+  var debounceCustomSmoothScroll = debounce(runCustomSmoothScroll, 1);
   
   window.addEventListener('scroll', function() {
     // Llamamos al debounce al realizar un desplazamiento manual
