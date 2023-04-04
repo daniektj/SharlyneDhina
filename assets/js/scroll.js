@@ -38,13 +38,7 @@ window.addEventListener('load', function() {
     };
   };
   
-  // Ejecutamos el desplazamiento suave al final del debounce
-  var debounceCustomSmoothScroll = debounce(runCustomSmoothScroll, 1);
-  
-  window.addEventListener('scroll', function() {
-    // Llamamos al debounce al realizar un desplazamiento manual
-    debounceCustomSmoothScroll();
-  });
+
   
   setInterval(function() {
     // Ejecutamos el desplazamiento suave si el scroll está en la parte superior y no hay un desplazamiento manual en progreso
