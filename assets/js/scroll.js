@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
     var scrollToMonancreP = monancreP.getBoundingClientRect().top + window.pageYOffset;
     
     // Ajusta esta velocidad a tu preferencia
-    var scrollSpeed = 1; // 1 pixel por iteración
+    var scrollSpeed = 0.5; // 0.5 pixels por iteración
     var scrollInProgress = false; // Variable para controlar el desplazamiento en progreso
     
     function customSmoothScroll() {
@@ -54,7 +54,7 @@ window.addEventListener('load', function() {
     }, 16);
     
     // Detener el desplazamiento suave al hacer clic o tocar la pantalla
-    window.addEventListener('click', function() {
+    window.addEventListener('mousedown', function() {
       scrollInProgress = false;
     });
     window.addEventListener('touchstart', function() {
