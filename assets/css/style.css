@@ -5,6 +5,22 @@
 }
 
 
+
+#content-text{
+	color: #aeadb6;
+	font-size: 3.5vw;
+	letter-spacing: .05em;
+	line-height: 1.6;
+	margin-top: 25vh;
+  transform: translateX(50vw) translateX(-50%) translateZ(0px);
+  width: 627px;
+	text-align: center;
+	font-weight: 300;
+}
+
+
+
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
